@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Section 1 - Question 1</title>
+</head>
+<body>
+  
+<div class="wholeContainer container">
+  
+  <div class="playlistContainer">
+
+    <iframe id="soundcloud-player" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/308949662&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>    
+    
+    <div class="coverPic">
+      <img src="https://www.progarchives.com/progressive_rock_discography_covers/3968/cover_374692212017_r.jpg">
+      </img>
+    </div>
+
+    <div class="songContent">
+      <h2 class="songTitle"><b>Faithfully</b></h2>
+      <p class="artistName">Journey</p>
+    </div>
+
+    <div class="audioControls">
+
+      <div class="duration">
+
+        <div class="startDuration">
+
+          <p id="startDuration">0:00</p>
+
+        </div>
+
+        <div class="endDuration">
+
+          <p id="endDuration">0:00</p>
+          
+        </div>
+        
+      </div>
+
+      <input type="range" value="0" id="progress" min="0" max="100"> 
+
+    </div>
+
+    <div class="Btncontrols">
+      <div> 
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-bar-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.854 3.646a.5.5 0 0 1 0 .708L8.207 8l3.647 3.646a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0M4.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5"/>
+          </svg>
+        </a>
+      </div>
+
+      &nbsp; &nbsp; &nbsp; &nbsp;
+
+      <div class="playButton">
+        <a href="#" onclick="togglePlay()" id="playButton">
+          <svg class="playIcon" xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+          </svg>
+        </a>
+      </div>
+
+      &nbsp; &nbsp; &nbsp; &nbsp;
+
+      <div>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-bar-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.146 3.646a.5.5 0 0 0 0 .708L7.793 8l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0M11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="https://w.soundcloud.com/player/api.js" async></script>
+<script src="script.js"></script>
+
+</body>
+</html>
